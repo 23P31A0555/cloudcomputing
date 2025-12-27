@@ -1,7 +1,7 @@
 from flask import Flask
-app=Flask(__name__)
-@app.route('/hello',method=['GET'])
+app = Flask(__name__)
+@app.route('/hello', methods=['GET'])
 def hello():
-    return "Hello CSE"
-if __name__=='__main__':
-    app.run(debug=True)
+    return "Hello from Flask!
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
